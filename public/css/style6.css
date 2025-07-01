@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-image: url('../img/login ong.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    align-items: center;
+}
+
+.subtitulo {
+    color: #2ccaed;
+    font-family: "Kanit", serif;
+    font-size: 15px;
+    
+}
+
+.titu {
+    margin-bottom: 20px;
+}
+
+.tit {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    gap: 80px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Kanit", serif;
+    color: #2ccaed;
+    text-align: center;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "Kanit", serif;
+    color: #2ccaed;
+}
+
+.pata {
+    width: 60px;
+    margin-bottom: 17px;
+}
+
+.con {
+    width: 100%;
+    display: flex;
+    
+    
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.esquerda, .direita {
+    flex: 1;
+    color: #2ccaed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.esquerda h1 {
+    font-size: 3rem;
+    color: #2ccaed;
+}
+
+form {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.caixa-lg h2 {
+    margin-bottom: 20px;
+    color: #2ccaed;
+}
+
+.grupo-in {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.grupo-in label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.espacamento {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.grupo-in input {
+    width: 380px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #2ccaed; 
+    background: none;
+    font-size: 15px;
+    font-family: "Kanit", serif;
+    outline: none; 
+    color: #2ccaed;
+    
+}
+.toggle-btn{
+    background-color: #2ccaed;
+}
+.grupo-in input::placeholder {
+    color: #2ccaed; 
+    font-family: "Kanit", serif;
+    opacity: 1; 
+}
+
+.botao {
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-width: 3px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 3px solid #2ccaed;
+    font-family: "Kanit", serif;
+}
+.bot{
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-width: 3px;
+    border-radius: 30px;
+    width: 110px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 3px solid #2ccaed;
+    font-family: "Kanit", serif;
+  
+}
+.bot1{
+    background: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-width: 3px;
+    border-radius: 30px;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 3px solid #2ccaed;
+    font-family: "Kanit", serif;
+  
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Kanit", serif;
+    font-size: 12px;
+    
+}
+ .a1{
+   
+    color: #ffffff;
+    font-family: "Kanit", serif;
+    font-size: 15px;
+    margin-top: none;
+    display: flex;
+}
+.a2{
+    margin-top: 4px;
+}
+.ong{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.bt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adicione ao seu bloco de estilo existente */
+#password-requirements {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-left: 4px solid #007bff;
+}
+
+#password-requirements ul {
+    margin: 5px 0;
+}
+
+#confirmation-feedback {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        background: none;
+        background-color: #003366;
+    }
+
+    h1, h2, h3, h4, h5, h6,  
+    p, label, a, span,  
+    .subtitulo, .tit, .grupo-in label { 
+        color: #ffffff !important;
+    }
+
+    .tit {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .con {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .grupo-in input::placeholder{
+        color: #ffffff !important;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .grupo-in input {
+        width: 100%;
+        border-bottom: 2px solid #ffffff; 
+    }
+    
+}
+
+@media (max-width: 480px) {
+    body {
+        background: none;
+        background-color: #003366;
+    }
+
+    h1, h2, h3, h4, h5, h6,  
+    p, label, a, span,  
+    .subtitulo, .tit,.subtitulo, .grupo-in label { 
+        color: #ffffff !important;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .botao {
+        background: #30aac0;
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+

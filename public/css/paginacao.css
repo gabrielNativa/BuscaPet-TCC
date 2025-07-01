@@ -1,0 +1,138 @@
+ /* Estilos para a paginação */
+ .pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination a, 
+.pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--border-radius-1);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.pagination a.page-link {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-info-light);
+}
+
+.pagination a.page-link:hover {
+    background-color: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border: 1px solid var(--color-primary);
+    font-weight: bold;
+}
+
+.pagination span.disabled {
+    color: var(--color-info-dark);
+    background-color: var(--color-info-light);
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    color: var(--color-dark-variant);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.per-page-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-dark-variant);
+}
+
+.per-page-selector select {
+    padding: 0.3rem 0.5rem;
+    border-radius: var(--border-radius-1);
+    border: 1px solid var(--color-info-light);
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.per-page-selector select:hover {
+    border-color: var(--color-primary);
+}
+
+/* Efeitos para dark mode */
+.dark-mode .pagination a.page-link {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border-color: var(--color-light);
+}
+
+.dark-mode .pagination a.page-link:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.dark-mode .pagination-info {
+    color: var(--color-dark-variant);
+}
+
+.dark-mode .per-page-selector select {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border-color: var(--color-light);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .view-modal-content,
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+    
+    .pagination {
+        gap: 0.3rem;
+    }
+    
+    .pagination a, 
+    .pagination span {
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .pagination-info {
+        font-size: 0.8rem;
+    }
+    
+    .per-page-selector {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

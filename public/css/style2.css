@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #f7f2e4;
+}
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    width: 100%;
+    
+    
+}
+
+header{
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(#e1b882d3,#ebbc75ce);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+main{
+   
+    width: 80%;
+    margin-left: 20% !important;
+}
+
+
+nav{
+width: 100%;
+display: block;
+padding: 0 10px !important;
+}
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    width: 100%;
+    border-bottom: 1px solid #5f3c0f;
+    margin-bottom: 10px;
+}
+nav .logo a img{
+    height: 150px;
+    width: 280px;
+}
+nav .form-group{
+    width: 100%;
+    margin-top: 10px !important;
+    background-color: #eee !important;
+    border-radius: 10px !important;
+    
+}
+nav .form-group .rows{
+    width: 100%;
+    position: relative;
+ 
+}
+nav .form-group .rows .form-control{
+    height: 44px;
+    box-shadow: none !important;
+    background: none !important;
+    padding-left: 34px !important;
+    color: #5f3c0f !important;
+    margin: 14px 0 !important;
+    border-radius: 10px !important;
+    border: 1px solid #5f3c0f;
+}
+nav .form-group .rows .form-control ::placeholder{
+    color: #5f3c0f !important;
+}
+nav .form-group .rows input::placeholder{
+    color: #5f3c0f;
+    font-size: 1em;
+}
+
+nav .form-group .rows i{
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    font-size: 1em;
+    color: #5f3c0f;
+
+}
+
+.nav-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}nav ul{
+    width: 100%;
+    list-style: none !important;
+    display: block;
+}
+nav ul li{
+    margin: 10px 0 !important;
+}
+nav ul li a{
+    display: flex;
+    
+    padding: 12px 10px !important;
+    text-decoration: none;
+    color: #000;
+    font-family: "Kanit", serif;
+    font-size: 25px;
+    border-radius: 5px;
+    
+}
+
+nav ul li a i{
+    margin-left: 6px !important;
+    color: #5f3c0f !important;
+}
+.actives,
+nav ul li a:hover{
+background-color: #eee !important;
+}
+nav ul li a.actives i{
+    color: #5f3c0f !important;
+}
+
+.nav-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px !important;
+}
+.nav-top .bars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-top .bars .btns{
+    background-color: #fff!important;
+    padding: 10px 12px !important;
+    margin: 10px !important;
+    border: none;
+    border-radius: 50%;
+    margin-right: 10px !important;
+    
+}
+.nav-top .bars .btns i{
+    font-size: 1.5em;
+}
+.nav-top .bars p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Kanit", serif;
+    color: #000;
+    font-weight: 500px;
+    font-size: 30px;
+}
+.user-notification{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-notification .users{
+    display: flex;
+    margin-right: 10px !important;
+    border: none;
+
+}
+.user-notification .users p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 500px;
+    color:#000;
+    font-size: 25px;
+    font-family: "Kanit", serif;
+}
+.user-notification .users i{
+    font-weight: bold;
+    color: #000;
+    margin-left: 8px !important;
+    font-size: 2rem;
+    color: #5f3c0f;
+}
+.user-notification .notification{
+    border: none;
+    background-color: #e1b882d3;
+    padding: 10px !important;
+    border-radius: 50%;
+    position: relative;
+}
+.user-notification .notification i{
+    font-size: 1.5rem;
+    color: #5f3c0f;
+}
+.user-notification .notification span{
+    position: absolute;
+    top: 0;
+    right: -12px;
+    background-color: red;
+    padding: px 4px !important;
+    border-radius: 10px;
+    width:30px;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    font-size: 1.2rem;
+}
+
+/* Ajustando container principal */
+.container-fluid {
+    width: 100%;
+    display: flex;
+    
+    gap: 100px;
+    padding: 0 2rem !important;
+}
+
+/* Cartão principal */
+.cards {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Estrutura do cartão */
+.card {
+    width: 100%;
+    background-color: #e1b882;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Cabeçalho do cartão */
+.card-header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteúdo principal do cartão */
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Número principal e texto */
+.card-number {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px !important;
+
+}
+
+.card-number .value-total {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-number .days {
+    font-size: 1rem;
+    color: #fff;
+   
+}
+
+/* Ícone */
+.card-icon {
+    font-size: 3rem;
+    color: #5f3c0f;
+}
+
+/* Rodapé do cartão */
+.card-footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1rem;
+}
+/* Estilo do card do formulário */
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1b882;
+    border-radius: 10px;
+    border: 1px solid #5f3c0f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 75%;
+    height: 800px;
+    margin: 50px auto;
+}
+
+
+/* Estilo da imagem de preview */
+.img-preview {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #5f3c0f;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+
+/* Estilo dos inputs */
+.custom-input {
+    background-color: #f7f2e4;
+    border: 1px solid #5f3c0f;
+    border-radius: 5px;
+    color: #5f3c0f;
+    gap: 15px;
+    height: 60px;
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    width: 450px !important; /* Faz os inputs ocuparem toda a largura do container */
+    margin-bottom: 15px !important;
+    padding: 10px !important;
+    gap: 100px !important;
+}
+
+
+.custom-input:focus {
+    border-color: #5f3c0f;
+    box-shadow: 0 0 5px rgba(95, 60, 15, 0.5);
+}
+
+.custom-card form .row {
+    margin-bottom: 20px; /* Espaçamento entre as linhas do formulário */
+}
+/* Estilo dos botões */
+.btn-custom {
+    background-color: #5f3c0f;
+    color: #f7f2e4;
+    border: 1px solid #5f3c0f;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-custom:hover {
+    background-color: #f7f2e4;
+    color: #5f3c0f;
+}
+
+.btn-voltar {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-voltar:hover {
+    background-color: #f7f2e4;
+    color: #dc3545;
+}
+
+.btn-salvar {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-salvar:hover {
+    background-color: #f7f2e4;
+    color: #28a745;
+}
+
+/* Estilo dos labels */
+.form-label {
+    color: #5f3c0f;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Estilo do feedback inválido */
+.invalid-feedback {
+    color: #dc3545;
+    font-family: "Kanit", sans-serif;
+    font-size: 14px;
+}
+.card-body{
+ 
+  margin-right: 50px !important;
+}

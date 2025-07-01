@@ -1,0 +1,143 @@
+.sidebar {
+    
+    width: 250px;
+    padding: 30px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 10;
+    overflow-y: auto;
+  }
+  
+  .sidebar img {
+    width: 200px;
+    margin-bottom: 10px;
+    align-self: center;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    align-self: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  .sidebar a,
+  .sidebar .btn-link-style {
+    color: #1c3f94;
+    text-decoration: none;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .sidebar a::before,
+  .sidebar .btn-link-style::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color:  #1c3f94;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  h2{
+    color:#363949;
+  }
+  
+  .sidebar a:hover,
+  .sidebar .btn-link-style:hover {
+    background-color:rgb(167, 189, 244);
+    transform: translateX(5px);
+  }
+  
+  .sidebar a:hover::before,
+  .sidebar .btn-link-style:hover::before {
+    opacity: 1;
+    left: 0;
+  }
+  
+  .sidebar a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+  }
+  
+  .sidebar a.active::before {
+    opacity: 1;
+    left: 0;
+  }
+  
+  .sidebar a i.icon,
+  .sidebar .btn-link-style i.icon {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  .sidebar .menu-group {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .sidebar .separator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+    width: 100%;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      overflow: auto;
+      padding: 10px;
+    }
+  
+    .sidebar img,
+    .sidebar h1 {
+      display: none;
+    }
+  
+    .sidebar .menu-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    .sidebar a,
+    .sidebar .btn-link-style {
+      justify-content: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
